@@ -344,7 +344,7 @@ const commonOptions = require('./commonOptions');
                             return q();
                         }
                         bigIp = new BigIp({ loggerOptions });
-
+                        sleep(15000);
                         logger.info('Initializing BIG-IP.');
                         return bigIp.init(
                             options.host,
